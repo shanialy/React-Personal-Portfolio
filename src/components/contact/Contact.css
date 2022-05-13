@@ -1,0 +1,182 @@
+.c {
+    /* height: 100vh; */
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.c-bg {
+    width: 10px;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #7675d4;
+    position: absolute;
+}
+
+
+.c-title {
+    font-size: 60px;
+    margin-left: 20px;
+}
+
+.c-info-item {
+    display: flex;
+    align-items: center;
+    margin: 50px 0px;
+    font-weight: 300;
+    width: 70%;
+}
+
+.c-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.c-desc {
+    font-weight: 200;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input {
+    width: 80%;
+    border-radius: 10px;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 10px 0px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+
+
+
+@media (max-width: 375px) {
+    .c-title {
+        font-size: 55px;
+        padding: 17px;
+        margin-left: 0px;
+    }
+
+    .p {
+        margin: 0px;
+        margin-top: 20px;
+        margin-left: 24px;
+    }
+}
+
+
+@media (max-width: 417px) {
+    form {
+        margin-top: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .c-title {
+        font-size: 55px;
+        padding: 30px;
+        margin-left: 0px;
+    }
+
+    .p {
+        margin: 0px;
+        margin-top: 20px;
+        margin-left: 24px;
+    }
+
+    textarea {
+        width: 80%;
+        border-radius: 10px;
+        margin: 10px 0px;
+        font-size: 14px;
+        padding-left: 10px;
+    }
+
+    .c-desc {
+        font-weight: 200;
+        text-align: center;
+        padding: 7px;
+    }
+
+
+    .row button {
+        width: 100%;
+    }
+
+    input {
+        width: 80%;
+        border-radius: 10px;
+        height: 50px;
+        border: none;
+        border-bottom: 1px solid black;
+        margin: 10px 0px;
+        font-size: 14px;
+        padding-left: 10px;
+    }
+
+}
+
+
+
+
+@media (min-width: 450px) and (max-width: 540px) {
+    form {
+        margin-top: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .row button {
+        width: 100%;
+    }
+
+    input {
+        width: 80%;
+        border-radius: 10px;
+        height: 50px;
+        border: none;
+        border-bottom: 1px solid black;
+        margin: 10px 0px;
+        font-size: 14px;
+        padding-left: 10px;
+    }
+
+    textarea {
+        width: 80%;
+        border-radius: 10px;
+        margin: 0px auto;
+        font-size: 14px;
+        padding-left: 10px;
+    }
+
+    .c-desc {
+        font-weight: 200;
+        text-align: center;
+        padding: 7px;
+    }
+
+
+
+}
+
+@media (min-width: 541px) and (max-width: 767px) {}
+
+@media (min-width: 768px) and (max-width: 773px) {}
+
+@media (min-width: 774px) and (max-width: 991px) {}
+
+@media (min-width: 992px) and (max-width: 1200px) {}

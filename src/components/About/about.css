@@ -1,0 +1,203 @@
+.a-card.bg {
+    width: 80%;
+    height: 68vh;
+    position: absolute;
+    top: 0px;
+    left: 28px;
+    background-color: #1e4f70;
+}
+
+.a-card {
+    width: 70%;
+    height: 70vh;
+    top: 22px;
+    left: 55px;
+    position: relative;
+}
+
+
+
+.a-title {
+    font-weight: 400;
+}
+
+.a-sub {
+    margin: 20px 0px;
+}
+
+.a-desc {
+    font-weight: 300;
+}
+
+
+.a-award-title {
+    font-weight: bold;
+    color: #1e4f70;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 375px) {
+    .a-card.bg {
+        left: 48px;
+        width: 294px;
+        height: 320px;
+    }
+
+    .a-card {
+        width: 247px;
+        height: 320px;
+        top: 39px;
+        left: 59px;
+    }
+
+    .a-title,
+    .a-sub,
+    .a-desc,
+    .a-award-title,
+    .a-award-p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 449px) {
+    .a-card.bg {
+        left: 58px;
+        width: 294px;
+        height: 320px;
+    }
+
+    .a-card {
+        width: 247px;
+        height: 320px;
+        top: 39px;
+        left: 69px;
+    }
+
+    .a-title,
+    .a-sub,
+    .a-desc,
+    .a-award-title,
+    .a-award-p {
+        text-align: center;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 540px) {
+    .a-card.bg {
+        width: 80%;
+        height: 68vh;
+        top: 0px;
+        left: 58px;
+    }
+
+    .a-card {
+        width: 70%;
+        height: 70vh;
+        top: 39px;
+        left: 80px;
+    }
+
+    .a-title,
+    .a-sub,
+    .a-desc,
+    .a-award-title,
+    .a-award-p {
+        text-align: center;
+    }
+}
+
+@media (min-width: 541px) and (max-width: 767px) {
+    .a-card.bg {
+        width: 80%;
+        height: 68vh;
+        top: 0px;
+        left: 58px;
+    }
+
+    .a-card {
+        width: 70%;
+        height: 70vh;
+        top: 22px;
+        left: 80px;
+    }
+
+    .a-title,
+    .a-sub,
+    .a-desc,
+    .a-award-title,
+    .a-award-p {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 773px) {
+    .a-card.bg {
+        display: none;
+    }
+
+    .imgStyling {
+        height: 50%;
+        width: 100%;
+        border: 2px solid black;
+    }
+
+    .a-card {
+        width: 70%;
+        height: 500px;
+        top: 69px;
+        left: 50px;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 912px) {
+    .a-card.bg {
+        width: 232px;
+        height: 250px;
+        top: 60px;
+        left: 28px;
+    }
+
+    .a-card {
+        width: 180px;
+        height: 200px;
+        top: 90px;
+        left: 45px;
+    }
+}
+
+/* @media (min-width: 841px) and (max-width: 991px) {
+    .a-card.bg {
+        width: 80%;
+        height: 50vh;
+        top: 60px;
+        left: 28px;
+    }
+
+    .a-card {
+        width: 70%;
+        height: 70vh;
+        top: 90px;
+        left: 45px;
+    }
+} */
+
+@media (min-width: 913px) and (max-width: 1200px) {
+    .a-card.bg {
+        width: 80%;
+        height: 68vh;
+        top: 0px;
+        left: 28px;
+    }
+
+    .a-card {
+        width: 70%;
+        height: 70vh;
+        top: 45px;
+        left: 50px;
+    }
+
+    .awardImg {
+        margin-top: 9px;
+    }
+}
