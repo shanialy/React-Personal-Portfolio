@@ -1,8 +1,10 @@
 import "./toogle.css";
+import Sun from "../../img/sun.png";
+import Moon from "../../img/moon.jpg";
 import { useContext } from "react";
 import { ThemeContext } from "../../context";
 
-const Toogle = () => {
+const Toggle = () => {
   const theme = useContext(ThemeContext);
 
   const handleClick = () => {
@@ -10,8 +12,8 @@ const Toogle = () => {
   };
   return (
     <div className="t">
-      <img src="/Images/sun.png" alt="" className="t-icon" />
-      <img src="/Images/moon.png" alt="" className="t-icon" />
+      <img src={Sun} alt="" className="t-icon" />
+      <img src={Moon} alt="" className="t-icon" />
       <div
         className="t-button"
         onClick={handleClick}
@@ -21,4 +23,4 @@ const Toogle = () => {
   );
 };
 
-export default Toogle;
+export default Toggle;

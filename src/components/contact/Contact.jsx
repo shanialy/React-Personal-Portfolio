@@ -1,12 +1,14 @@
 import "./Contact.css";
+import Phone from "../../img/phone.jpg";
+import Email from "../../img/email.jpg";
+import Address from "../../img/address.jpg";
 import { useContext, useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import { ThemeContext } from "../../context";
-import cogoToast from 'cogo-toast';
 
 const Contact = () => {
   const formRef = useRef();
-  const [done, setDone] = useState(false)
+  const [done, setDone] = useState(false);
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
 
@@ -14,97 +16,75 @@ const Contact = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_n5co7ob",
-        "template_i953bpq",
+        "service_9xnu39c",
+        "template_2spywj3",
         formRef.current,
-        "60PgsgCuCud7AVrC_"
+        "GktiPGt8TEBQs3OIU"
       )
       .then(
         (result) => {
           console.log(result.text);
-          setDone(true)
+          setDone(true);
         },
         (error) => {
-            cogoToast.error('There occured an errorr' ,{
-              position : "top-center"
-            });
+          console.log(error.text);
         }
       );
-
-      if(done){
-        cogoToast.success('You have successfully sent an email to samiullahtariqbutt@gmail.com' ,{
-          position : "top-center"
-        }) 
-      }
-
   };
 
   return (
-    <div className="container-fluid c mt-3">
-      <div className="c-bg d-none d-lg-block"></div>
-      <div className="row">
-        <div className="col-md-6">
+    <div className="c">
+      <div className="c-bg"></div>
+      <div className="c-wrapper">
+        <div className="c-left">
           <h1 className="c-title">Let's discuss your project</h1>
-          <div>
-          <div className="c-info-container">
+          <div className="c-info">
             <div className="c-info-item">
-              <img src="/Images/phone.png" alt="" className="c-icon" />
-              +92 3114816018
+              <img src={Phone} alt="" className="c-icon" />
+              +92 332 3786747
             </div>
             <div className="c-info-item">
-              <img className="c-icon" src="/Images/email.png" alt="" />
-              samiullahtariqbutt@gmail.com
+              <img className="c-icon" src={Email} alt="" />
+              xhanialee@gmail.com
             </div>
             <div className="c-info-item">
-              <img className="c-icon" src="/Images/address.png" alt="" />
-              GULBAHAR COLONY STREET NO 1. LAHORE CANTT
-            </div>
+              <img className="c-icon" src={Address} alt="" />
+              karachi
             </div>
           </div>
         </div>
-        
-        <div className="col-md-6">
-          <p className="c-desc mt-4">
-            <b style={{fontWeight : "bolder" ,fontSize : "17px"}}>What's your story?</b> Get in touch. Always available for
+        <div className="c-right">
+          <p className="c-desc">
+            <b>What’s your story?</b> Get in touch. Always available for
             freelancing if the right project comes along. me.
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>
-          <div className="row" >
-         
-            <div className="col-md-6">
-            <input style={{backgroundColor: darkMode && "white" }} type="text" placeholder="Name" name="user_name" />
-             <div className="row">
-               <div className="col">
-               <input style={{backgroundColor: darkMode && "white"}} type="text" placeholder="Email" name="user_email" />
-               </div>
-             </div>
-            </div>
-           <div className="col-md-6">
-           <input style={{backgroundColor: darkMode && "white"}} type="text" placeholder="Subject" name="user_subject" />
-           </div>
-           
-          
-            
-          
-          </div>
-          <div className="row">
-            <div className="col">
-            <textarea style={{backgroundColor: darkMode && "white" }} rows="5" placeholder="Message" name="message" />         
-            </div>
-
-            <div className="row">
-            <div className="col"></div>
-            <div className="col">
-            <button className="btn" style={{backgroundColor : " #7675d4" , color : "white"}}>Submit</button>
-
-            
-                          </div>
-           
-<div className="col"></div>
-
-            </div>
-           
-          </div>
+            <input
+              style={{ backgroundColor: darkMode && "#333" }}
+              type="text"
+              placeholder="Name"
+              name="user_name"
+            />
+            <input
+              style={{ backgroundColor: darkMode && "#333" }}
+              type="text"
+              placeholder="Subject"
+              name="user_subject"
+            />
+            <input
+              style={{ backgroundColor: darkMode && "#333" }}
+              type="text"
+              placeholder="Email"
+              name="user_email"
+            />
+            <textarea
+              style={{ backgroundColor: darkMode && "#333" }}
+              rows="5"
+              placeholder="Message"
+              name="message"
+            />
+            <button>Submit</button>
+            {done && "Thank you..."}
           </form>
         </div>
       </div>

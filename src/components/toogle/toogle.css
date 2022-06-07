@@ -1,4 +1,4 @@
-.t {
+.t{
     width: 50px;
     height: 25px;
     border-radius: 20px;
@@ -13,12 +13,12 @@
     justify-content: space-around;
 }
 
-.t-icon {
+.t-icon{
     width: 15px;
     height: 15px;
 }
 
-.t-button {
+.t-button{
     width: 25px;
     height: 25px;
     border-radius: 50%;
