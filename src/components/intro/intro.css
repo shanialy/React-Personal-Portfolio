@@ -96,7 +96,6 @@
   }
 
   .i-left-wrapper {
-  
     padding: 10px;
     align-items: center;
     justify-content: center;
@@ -105,8 +104,19 @@
     width: 40%;
   }
 
-  .i-desc{
+  .i-desc {
     display: none;
   }
-  
+  .i-title-wrapper {
+    height: 50%;
+    animation: move 10s ease-in-out infinite alternate;
+  }
+  .i-title-item {
+    height: 70px;
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+    display: flex;
+    align-items: center;
+  }
 }
